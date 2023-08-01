@@ -1,0 +1,16 @@
+print("Calculator to practice tables")
+direction = input("Enter a direction(Backward(B)orForward(F)): ")
+if(direction == "F"):
+    tn = int(input("Enter a table number: "))
+    sn = int(input("Enter a starting number: "))
+    en = int(input("Enter an ending number: "))
+    for x in range(sn, (en+1), 1):
+        print(tn, "X", x, "=", (tn*x))
+elif(direction == "B"):
+    tn = int(input("Enter a table number: "))
+    sn = int(input("Enter a starting number: "))
+    en = int(input("Enter an ending number: "))
+    for x in range(en, (sn-1), -1):
+        print(tn, "X", x, "=", (tn*x))
+else:
+    print("Invalid Input")
