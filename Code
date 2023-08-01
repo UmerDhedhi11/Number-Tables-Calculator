@@ -1,0 +1,5 @@
+tn = int(input("Enter a table number: "))
+sn = int(input("Enter a starting number: "))
+en = int(input("Enter an ending number: "))
+for x in range(sn, (en+1), 1):
+    print(tn, "X", x, "=", (tn*x))
